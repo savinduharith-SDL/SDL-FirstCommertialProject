@@ -1,0 +1,267 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.11f1 (99c7afb366b3) revision 10078127'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home Single Language; OS build 19043.1083; Version 2009; 64bit' Language: 'en' Physical Memory: 16234 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.11f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Repos/GitHub/SDL-FirstCommertialProject/SDL First Project
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+14338
+Successfully changed project path to: D:/Repos/GitHub/SDL-FirstCommertialProject/SDL First Project
+D:/Repos/GitHub/SDL-FirstCommertialProject/SDL First Project
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 37.32 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.11f1 (99c7afb366b3)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Repos/GitHub/SDL-FirstCommertialProject/SDL First Project/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Microsoft Basic Render Driver (ID=0x8c)
+    Vendor:   
+    VRAM:     8117 MB
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56136
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003396 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 34.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.322 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003408 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 33.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.012 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.37 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2080 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.8 MB.
+System memory in use after: 92.8 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2513.
+Total: 2.253700 ms (FindLiveObjects: 0.182200 ms CreateObjectMapping: 0.064100 ms MarkObjects: 1.897100 ms  DeleteObjects: 0.109600 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa27944bdea339c97c39027c7eea529c') in 0.014187 seconds
+  Import took 0.016995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(a51b50042a941c0418c2d4ce1d6ea642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(a51b50042a941c0418c2d4ce1d6ea642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f86c05f9eb5b1d20eeacb7ae1c1b3795') in 0.005563 seconds
+  Import took 0.008272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.315365 seconds.
+  path: Assets/Scenes/lv1.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/lv1.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '001bd632e31d3f8311a15f37fa9d741f') in 0.013209 seconds
+  Import took 0.017271 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003437 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.152 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2086 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.1 MB.
+System memory in use after: 93.0 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2528.
+Total: 2.018300 ms (FindLiveObjects: 0.158800 ms CreateObjectMapping: 0.065900 ms MarkObjects: 1.713900 ms  DeleteObjects: 0.078700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 924.658823 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0.008659 seconds
+  Import took 0.017819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.087396 seconds.
+  path: Assets/SpriteSheets
+  artifactKey: Guid(a440e14ed38938c47ac26b1dcc01427a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets using Guid(a440e14ed38938c47ac26b1dcc01427a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '160c2b25f49fed4bbdd0964ed843ab88') in 0.012689 seconds
+  Import took 0.019369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.749479 seconds.
+  path: Assets/SpriteSheets/character_femalePerson_sheet.png
+  artifactKey: Guid(16fb6cc98f5e44a4cb14046dbdb37c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/character_femalePerson_sheet.png using Guid(16fb6cc98f5e44a4cb14046dbdb37c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8f86caf17418c98c5b8fd1013602f94') in 0.134244 seconds
+  Import took 0.137780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.607389 seconds.
+  path: Assets/SpriteSheets/character_robot_sheet.png
+  artifactKey: Guid(0fa40167bb4bee24a9bc0ea2b20d95fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/character_robot_sheet.png using Guid(0fa40167bb4bee24a9bc0ea2b20d95fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0a1ed8e3f035363229ca35044eddcfc') in 0.022563 seconds
+  Import took 0.027485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.597794 seconds.
+  path: Assets/SpriteSheets/character_zombie_sheet.png
+  artifactKey: Guid(723c0cca1be1bb14780729e653c9beb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/character_zombie_sheet.png using Guid(723c0cca1be1bb14780729e653c9beb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b6ee92aafb5179592e21009ce5ad22b') in 0.023992 seconds
+  Import took 0.028650 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 190.298448 seconds.
+  path: Assets/SpriteSheets/character_femalePerson_sheet.png
+  artifactKey: Guid(16fb6cc98f5e44a4cb14046dbdb37c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/character_femalePerson_sheet.png using Guid(16fb6cc98f5e44a4cb14046dbdb37c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '177d24ca26c07aec9edfbe40daf227aa') in 0.022274 seconds
+  Import took 0.026748 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.889643 seconds.
+  path: Assets/SpriteSheets/character_femalePerson_sheet.png
+  artifactKey: Guid(16fb6cc98f5e44a4cb14046dbdb37c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/character_femalePerson_sheet.png using Guid(16fb6cc98f5e44a4cb14046dbdb37c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bc908ec98f04b3acc90aa9dc7b0a9c5') in 0.143224 seconds
+  Import took 0.146822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.186989 seconds.
+  path: Assets/SpriteSheets/character_femalePerson_sheet.png
+  artifactKey: Guid(16fb6cc98f5e44a4cb14046dbdb37c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/character_femalePerson_sheet.png using Guid(16fb6cc98f5e44a4cb14046dbdb37c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e25055a21acc026d9ed173e92cca7ab') in 0.112627 seconds
+  Import took 0.116058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.697461 seconds.
+  path: Assets/SpriteSheets/character_robot_sheet.png
+  artifactKey: Guid(0fa40167bb4bee24a9bc0ea2b20d95fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/character_robot_sheet.png using Guid(0fa40167bb4bee24a9bc0ea2b20d95fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88e290f07bd936f8264e52cadebc24f2') in 0.021432 seconds
+  Import took 0.026421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.613575 seconds.
+  path: Assets/SpriteSheets/character_robot_sheet.png
+  artifactKey: Guid(0fa40167bb4bee24a9bc0ea2b20d95fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/character_robot_sheet.png using Guid(0fa40167bb4bee24a9bc0ea2b20d95fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddaf6ed2c67fb8d02126565017ed4e59') in 0.111659 seconds
+  Import took 0.116446 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.246161 seconds.
+  path: Assets/SpriteSheets/character_zombie_sheet.png
+  artifactKey: Guid(723c0cca1be1bb14780729e653c9beb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/character_zombie_sheet.png using Guid(723c0cca1be1bb14780729e653c9beb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44d32e778da036f64e27694252e52a76') in 0.021499 seconds
+  Import took 0.024775 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014607 seconds.
+  path: Assets/SpriteSheets/character_zombie_sheet.png
+  artifactKey: Guid(723c0cca1be1bb14780729e653c9beb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/character_zombie_sheet.png using Guid(723c0cca1be1bb14780729e653c9beb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44d32e778da036f64e27694252e52a76') in 0.017105 seconds
+  Import took 0.025011 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.429363 seconds.
+  path: Assets/SpriteSheets/character_zombie_sheet.png
+  artifactKey: Guid(723c0cca1be1bb14780729e653c9beb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/character_zombie_sheet.png using Guid(723c0cca1be1bb14780729e653c9beb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '103d33cd465a6ba26b266c2731ea471d') in 0.133354 seconds
+  Import took 0.137875 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.636010 seconds.
+  path: Assets/Cainos
+  artifactKey: Guid(02551179c582f6947a9f9a56ae99bd0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos using Guid(02551179c582f6947a9f9a56ae99bd0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd26640a7935dc296a3ab65e9683b3223') in 0.011898 seconds
+  Import took 0.017394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.780347 seconds.
+  path: Assets/Cainos/Pixel Art Platformer - Village Props
+  artifactKey: Guid(1f08d781702466b438d35aa7938d8030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Platformer - Village Props using Guid(1f08d781702466b438d35aa7938d8030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0d0ee06777279a5df54c5441e1b0263') in 0.007460 seconds
+  Import took 0.018916 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.125795 seconds.
+  path: Assets/Cainos/Pixel Art Platformer - Village Props/Prefab
+  artifactKey: Guid(8d3b16bf124f65b49b22817d94a88022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Platformer - Village Props/Prefab using Guid(8d3b16bf124f65b49b22817d94a88022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82e70ed34c89e99aec06b4e494a2d95c') in 0.011188 seconds
+  Import took 0.018381 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.076841 seconds.
+  path: Assets/Cainos/Pixel Art Platformer - Village Props/Prefab/PF FX Campfire Fire.prefab
+  artifactKey: Guid(2b206c0d2afb3604183d9210be1d84ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Platformer - Village Props/Prefab/PF FX Campfire Fire.prefab using Guid(2b206c0d2afb3604183d9210be1d84ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c10249b2c63f130e987ea23e70906569') in 0.022143 seconds
+  Import took 0.028131 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Cainos/Pixel Art Platformer - Village Props/Prefab/PF FX Torch Fire.prefab
+  artifactKey: Guid(4cfc0b96b77f5374a9242d6779dd65bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Platformer - Village Props/Prefab/PF FX Torch Fire.prefab using Guid(4cfc0b96b77f5374a9242d6779dd65bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ce17f3f21fc55881a46c719f327a819') in 0.021197 seconds
+  Import took 0.024516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Cainos/Pixel Art Platformer - Village Props/Prefab/PF FX Fire Bowl Fire.prefab
+  artifactKey: Guid(69e62f89c9d82ba4085d34eeff6f57bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Platformer - Village Props/Prefab/PF FX Fire Bowl Fire.prefab using Guid(69e62f89c9d82ba4085d34eeff6f57bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6be8e04405d0af0aefeb92709d5aa3c') in 0.014643 seconds
+  Import took 0.020193 seconds .
+
