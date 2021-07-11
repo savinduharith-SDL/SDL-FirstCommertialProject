@@ -7,9 +7,10 @@ public class player : MonoBehaviour
 {
     private Rigidbody2D playerRB;
     [SerializeField] private float playerMoveSpeed = 6f;
-    private float horizontalInput;
+    private float horizontalInput, verticalInput;
     private Animator playerAnim;
     private BoxCollider2D playerFeetCollider;
+    public Joystick joystick;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +28,8 @@ public class player : MonoBehaviour
 
     private void Jump()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && playerFeetCollider.IsTouchingLayers(LayerMask.GetMask("Foreground")))
+        verticalInput = joystick.Vertical;
+        if(verticalInput > 0.6f && playerFeetCollider.IsTouchingLayers(LayerMask.GetMask("Foreground")))
         {
             playerAnim.SetBool("isJumping", true);
             playerRB.velocity = Vector2.up * playerMoveSpeed;
@@ -40,8 +42,15 @@ public class player : MonoBehaviour
 
     private void PlayerMovement()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
-        if(Mathf.Abs(horizontalInput)> Mathf.Epsilon)
+        if(Mathf.Abs(joystick.Horizontal) > 0.5f)
+        { 
+        horizontalInput = Mathf.Sign(joystick.Horizontal);
+        }
+        else
+        {
+            horizontalInput = 0;
+        }
+        if (Mathf.Abs(horizontalInput)> Mathf.Epsilon)
         {
             float signOfHorizontalInput = Mathf.Sign(horizontalInput);
             transform.localScale = new Vector2(signOfHorizontalInput, 1);
