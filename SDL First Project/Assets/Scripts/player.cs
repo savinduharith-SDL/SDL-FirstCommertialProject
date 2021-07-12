@@ -6,10 +6,12 @@ using UnityEngine;
 public class player : MonoBehaviour
 {
     private Rigidbody2D playerRB;
-    [SerializeField] private float playerMoveSpeed = 6f;
+    [SerializeField] private float playerVerticalMoveSpeed = 5f;
+    [SerializeField] private float playerHorizontalMoveSpeed = 3f;
     private float horizontalInput, verticalInput;
     private Animator playerAnim;
     private BoxCollider2D playerFeetCollider;
+    private CapsuleCollider2D playerMainCollider;
     public Joystick joystick;
     // Start is called before the first frame update
     void Start()
@@ -17,26 +19,40 @@ public class player : MonoBehaviour
         playerRB = GetComponent<Rigidbody2D>();
         playerAnim = GetComponent<Animator>();
         playerFeetCollider = GetComponent<BoxCollider2D>();
+        playerMainCollider = GetComponent<CapsuleCollider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
         PlayerMovement();
-        Jump();
+        JumpAndClimb();
     }
 
-    private void Jump()
+    private void JumpAndClimb()
     {
         verticalInput = joystick.Vertical;
-        if(verticalInput > 0.6f && playerFeetCollider.IsTouchingLayers(LayerMask.GetMask("Foreground", "PlayerInteractable")))
+        bool isTouchingLadder = playerMainCollider.IsTouchingLayers(LayerMask.GetMask("ladder"));
+        if (verticalInput > 0.6f)
         {
+            if(playerFeetCollider.IsTouchingLayers(LayerMask.GetMask("Foreground", "PlayerInteractable")) && !isTouchingLadder)
+            { 
             playerAnim.SetBool("isJumping", true);
-            playerRB.velocity = Vector2.up * playerMoveSpeed;
+            playerRB.velocity = Vector2.up * playerVerticalMoveSpeed;
+            }
+            if(isTouchingLadder)
+            {
+                playerAnim.SetBool("isJumping", false);
+                playerAnim.SetBool("isRunning", false);
+                playerAnim.SetBool("isClimbing", true);
+                playerRB.velocity = Vector2.up * playerVerticalMoveSpeed;
+            }
+
         }
         else
         {
             playerAnim.SetBool("isJumping", false);
+            playerAnim.SetBool("isClimbing", false);
         }
     }
 
@@ -61,6 +77,6 @@ public class player : MonoBehaviour
         {
             playerAnim.SetBool("isRunning", false);
         }
-        playerRB.velocity = new Vector2(playerMoveSpeed * horizontalInput , playerRB.velocity.y );
+        playerRB.velocity = new Vector2(playerHorizontalMoveSpeed * horizontalInput , playerRB.velocity.y );
     }
 }
