@@ -29,7 +29,7 @@ public class player : MonoBehaviour
     private void Jump()
     {
         verticalInput = joystick.Vertical;
-        if(verticalInput > 0.6f && playerFeetCollider.IsTouchingLayers(LayerMask.GetMask("Foreground")))
+        if(verticalInput > 0.6f && playerFeetCollider.IsTouchingLayers(LayerMask.GetMask("Foreground", "PlayerInteractable")))
         {
             playerAnim.SetBool("isJumping", true);
             playerRB.velocity = Vector2.up * playerMoveSpeed;
@@ -42,9 +42,10 @@ public class player : MonoBehaviour
 
     private void PlayerMovement()
     {
-        if(Mathf.Abs(joystick.Horizontal) > 0.5f)
+        float Joystickhorizontal = joystick.Horizontal;
+        if (Mathf.Abs(Joystickhorizontal) > 0.5f)
         { 
-        horizontalInput = Mathf.Sign(joystick.Horizontal);
+        horizontalInput = Mathf.Sign(Joystickhorizontal);
         }
         else
         {
