@@ -13,6 +13,8 @@ public class player : MonoBehaviour
     private BoxCollider2D playerFeetCollider;
     private CapsuleCollider2D playerMainCollider;
     public Joystick joystick;
+    private bool isGameActive = true;
+    public ParticleSystem deathParticles;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,15 +22,28 @@ public class player : MonoBehaviour
         playerAnim = GetComponent<Animator>();
         playerFeetCollider = GetComponent<BoxCollider2D>();
         playerMainCollider = GetComponent<CapsuleCollider2D>();
+        deathParticles.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(isGameActive)
+        { 
         PlayerMovement();
         JumpAndClimb();
+        Die();
+        }
     }
-
+    private void Die()
+    {
+        if(playerMainCollider.IsTouchingLayers(LayerMask.GetMask("enemies")))
+        {
+            playerAnim.SetTrigger("Die");
+            isGameActive = false;
+            deathParticles.gameObject.SetActive(true);
+        }
+    }
     private void JumpAndClimb()
     {
         verticalInput = joystick.Vertical;
